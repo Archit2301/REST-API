@@ -1,5 +1,5 @@
 {
-  "development": {    
+  "development": {
     "dialect": "sqlite",
     "storage": "fsjstd-restapi.db"
   },
