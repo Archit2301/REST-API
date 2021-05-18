@@ -2,6 +2,7 @@
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcryptjs');
 
+// User model defined that has many association with the course model
 module.exports = (sequelize) => {
   class User extends Model {}
   User.init({

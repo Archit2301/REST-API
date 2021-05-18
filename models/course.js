@@ -1,6 +1,7 @@
 'use strict';
 const { Model, DataTypes } = require('sequelize');
 
+// Course schema defined that has belongs to association with the user model
 module.exports = (sequelize) => {
     class Course extends Model {}
     Course.init({

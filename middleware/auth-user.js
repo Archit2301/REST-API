@@ -1,11 +1,11 @@
 'use strict';
 
-//Import Modules and Models
+// Import Modules and Models
 const auth = require('basic-auth');
 const { User } = require('../models');
 const bcrypt = require('bcryptjs');
 
-//Create and Export Middleware for Authentication in Routes
+// Create and Export Middleware for Authentication in Routes
 exports.authenticateUser = async (req, res, next) => {
   let message;
   const credentials = auth(req);
