@@ -70,7 +70,7 @@ router.put('/courses/:id', authenticateUser, asyncHandler(async (req, res) => {
         await course.update(req.body);
         res.status(204).end();
       } else {
-        res.status(403).json({ message: 'Access is forbidden' });
+        res.status(403).json({ message: 'Access is forbidden' }).end();
       }  
     } else {
       res.status(404).json({ messsage: 'Course Not Found' });  
